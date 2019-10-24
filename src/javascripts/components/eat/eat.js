@@ -1,14 +1,33 @@
 import './eat.scss';
 import utilities from '../../utilities/utilities';
 
+let full = 100;
+
 const printEatQuad = () => {
   let domString = '';
-  const full = 100;
   domString += `<div class="eat-buttons">
-  <p><progress value="${full}" max="100" id="eatTotal">Full</progress></p>
-  <p><button class='primary' id='healthy'>Granola</button> <button class ='primary' id='junk'>Cheetos</button></p>
+  <p><progress value="${full}" max="100" id="eatBar">Full</progress></p>
+  <p><button class='primary' id='healthy-button'>Healthy Food</button> <button class ='primary' id='junk-button'>Junk Food</button></p>
   </div>`;
   utilities.printToDom('eat', domString);
 };
 
-export default { printEatQuad };
+const eatHealthy = () => {
+  if (full <= 90) {
+    full += 10;
+    document.getElementById('eatBar').value = full;
+  }
+};
+
+const eatJunk = () => {
+
+};
+const feedHealthy = () => {
+  document.getElementById('healthy-button').addEventListener('click', eatHealthy);
+};
+
+const feedJunk = () => {
+  document.getElementById('junk-button').addEventListener('click', eatJunk);
+};
+
+export default { printEatQuad, feedHealthy, feedJunk };
