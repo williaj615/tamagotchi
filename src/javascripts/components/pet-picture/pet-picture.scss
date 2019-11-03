@@ -1,0 +1,15 @@
+#pet {
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    top: 25%;
+    bottom: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 200px;
+        width: 250px;
+    }
+    
+  }
