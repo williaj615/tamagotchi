@@ -1,4 +1,10 @@
-import 'bootstrap';
 import '../styles/main.scss';
+import eat from './components/eat/eat';
 
-console.error('hi');
+const init = () => {
+  eat.printEatQuad();
+  eat.feedHealthy();
+  eat.feedJunk();
+};
+
+init();
