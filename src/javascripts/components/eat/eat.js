@@ -20,7 +20,10 @@ const eatHealthy = () => {
 };
 
 const eatJunk = () => {
-
+  if (full > 3) {
+    full -= 3;
+    document.getElementById('eatBar').value = full;
+  }
 };
 const feedHealthy = () => {
   document.getElementById('healthy-button').addEventListener('click', eatHealthy);
