@@ -11,6 +11,7 @@ const init = () => {
   play.playBig();
   play.playLittle();
   fight.printFightQuad();
+  fight.fightThem();
 };
 
 init();

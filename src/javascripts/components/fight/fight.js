@@ -1,7 +1,7 @@
 import './fight.scss';
 import utilities from '../../utilities/utilities';
 
-const strength = 100;
+let strength = 100;
 
 const printFightQuad = () => {
   let domString = '';
@@ -12,4 +12,16 @@ const printFightQuad = () => {
   utilities.printToDom('fight', domString);
 };
 
-export default { printFightQuad };
+const commitViolence = () => {
+  if (strength >= 10) {
+    strength -= 10;
+    document.getElementById('fightBar').value = strength;
+  }
+};
+
+
+const fightThem = () => {
+  document.getElementById('fight-button').addEventListener('click', commitViolence);
+};
+
+export default { printFightQuad, fightThem };
