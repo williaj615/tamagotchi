@@ -5,9 +5,9 @@ let fun = 50;
 
 const printPlayQuad = () => {
   let domString = '';
-  domString += `<div class="play-buttons">
+  domString += `<div id="play-buttons">
   <p><progress value="${fun}" max="100" id="playBar">Fun</progress></p>
-  <p><button class='primary' id='big-fun-button'>Play Big</button> <button class ='primary' id='little-fun-button'>Play Little</button></p>
+  <p><button class='pos' id='big-fun-button'>Play Big</button> <button class ='neut' id='little-fun-button'>Play Little</button></p>
   </div>`;
   utilities.printToDom('play', domString);
 };

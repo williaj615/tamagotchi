@@ -5,9 +5,9 @@ let full = 100;
 
 const printEatQuad = () => {
   let domString = '';
-  domString += `<div class="eat-buttons">
+  domString += `<div id="eat-buttons">
   <p><progress value="${full}" max="100" id="eatBar">Full</progress></p>
-  <p><button class='primary' id='healthy-button'>Healthy Food</button> <button class ='primary' id='junk-button'>Junk Food</button></p>
+  <p><button class='pos' id='healthy-button'>Healthy Food</button> <button class ='neg' id='junk-button'>Junk Food</button></p>
   </div>`;
   utilities.printToDom('eat', domString);
 };

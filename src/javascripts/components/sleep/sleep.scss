@@ -3,5 +3,12 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    #sleep-buttons {
+        margin-right: 1em;
+    }
 }
