@@ -15,6 +15,7 @@ const init = () => {
   fight.fightThem();
   fight.runAway();
   sleep.printSleepQuad();
+  sleep.takeANap();
 };
 
 init();

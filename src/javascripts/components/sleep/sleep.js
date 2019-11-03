@@ -1,7 +1,7 @@
 import './sleep.scss';
 import utilities from '../../utilities/utilities';
 
-const energy = 50;
+let energy = 50;
 
 const printSleepQuad = () => {
   let domString = '';
@@ -12,4 +12,15 @@ const printSleepQuad = () => {
   utilities.printToDom('sleep', domString);
 };
 
-export default { printSleepQuad };
+const catNap = () => {
+  if (energy <= 50) {
+    energy += 50;
+    document.getElementById('sleepBar').value = energy;
+  }
+};
+
+const takeANap = () => {
+  document.getElementById('nap-button').addEventListener('click', catNap);
+};
+
+export default { printSleepQuad, takeANap };
