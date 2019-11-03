@@ -12,6 +12,7 @@ const init = () => {
   play.playLittle();
   fight.printFightQuad();
   fight.fightThem();
+  fight.runAway();
 };
 
 init();

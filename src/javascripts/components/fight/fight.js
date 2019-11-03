@@ -19,9 +19,19 @@ const commitViolence = () => {
   }
 };
 
+const runBravely = () => {
+  if (strength < 100) {
+    strength += 1;
+    document.getElementById('fightBar').value = strength;
+  }
+};
 
 const fightThem = () => {
   document.getElementById('fight-button').addEventListener('click', commitViolence);
 };
 
-export default { printFightQuad, fightThem };
+const runAway = () => {
+  document.getElementById('run-button').addEventListener('click', runBravely);
+};
+
+export default { printFightQuad, fightThem, runAway };
