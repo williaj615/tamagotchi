@@ -16,6 +16,7 @@ const init = () => {
   fight.runAway();
   sleep.printSleepQuad();
   sleep.takeANap();
+  sleep.longRest();
 };
 
 init();
