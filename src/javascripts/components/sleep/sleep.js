@@ -1,7 +1,7 @@
 import './sleep.scss';
 import utilities from '../../utilities/utilities';
 
-let energy = 50;
+let energy = 40;
 
 const printSleepQuad = () => {
   let domString = '';
@@ -13,8 +13,15 @@ const printSleepQuad = () => {
 };
 
 const catNap = () => {
-  if (energy <= 50) {
-    energy += 50;
+  if (energy <= 90) {
+    energy += 10;
+    document.getElementById('sleepBar').value = energy;
+  }
+};
+
+const deepSlumber = () => {
+  if (energy <= 40) {
+    energy += 60;
     document.getElementById('sleepBar').value = energy;
   }
 };
@@ -23,4 +30,8 @@ const takeANap = () => {
   document.getElementById('nap-button').addEventListener('click', catNap);
 };
 
-export default { printSleepQuad, takeANap };
+const longRest = () => {
+  document.getElementById('deep-sleep-button').addEventListener('click', deepSlumber);
+};
+
+export default { printSleepQuad, takeANap, longRest };
