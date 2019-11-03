@@ -5,9 +5,9 @@ let strength = 100;
 
 const printFightQuad = () => {
   let domString = '';
-  domString += `<div class="fight-buttons">
+  domString += `<div id="fight-buttons">
   <p><progress value="${strength}" max="100" id="fightBar">Strength</progress></p>
-  <p><button class='primary' id='fight-button'>Fight</button> <button class ='primary' id='run-button'>Run</button></p>
+  <p><button class='neg' id='fight-button'>Fight</button> <button class ='pos' id='run-button'>Run</button></p>
   </div>`;
   utilities.printToDom('fight', domString);
 };

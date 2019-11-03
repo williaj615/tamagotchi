@@ -5,9 +5,9 @@ let energy = 40;
 
 const printSleepQuad = () => {
   let domString = '';
-  domString += `<div class="sleep-buttons">
+  domString += `<div id="sleep-buttons">
   <p><progress value="${energy}" max="100" id="sleepBar">Energy</progress></p>
-  <p><button class='primary' id='nap-button'>Cat Nap</button> <button class ='primary' id='deep-sleep-button'>Deep Slumber</button></p>
+  <p><button class='neut' id='nap-button'>Cat Nap</button> <button class ='pos' id='deep-sleep-button'>Deep Slumber</button></p>
   </div>`;
   utilities.printToDom('sleep', domString);
 };

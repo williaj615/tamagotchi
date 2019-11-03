@@ -3,5 +3,13 @@
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    #play-buttons {
+        margin-right: 1em;
+    }
     
 }
