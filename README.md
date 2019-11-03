@@ -4,7 +4,7 @@
 Use this application to perform different functions with your Tamagotchi pet, such as play, eat, fight, and sleep.
 
 ## Screenshots
-![Tamagotchi Preview](src/project-photos/main-view.png
+![Tamagotchi Preview](https://raw.githubusercontent.com/williaj615/tamagotchi/master/src/project-photos/main-view.png
 )
  
 
