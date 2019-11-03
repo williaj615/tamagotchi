@@ -7,6 +7,8 @@ const init = () => {
   eat.feedHealthy();
   eat.feedJunk();
   play.printPlayQuad();
+  play.playBig();
+  play.playLittle();
 };
 
 init();
